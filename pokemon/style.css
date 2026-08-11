@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background: #000000;
+  color: #000000;
+}
+
+
+/* Header */
+
+header {
+  background: rgb(253, 215, 28);
+  text-align: center;
+  padding: 30px;
+  border-bottom: 5px solid #ffffff;
+}
+
+header h1 {
+  color: #000000;
+  font-size: 40px;
+}
+
+header p {
+  margin-top: 8px;
+  color: #4f4d4d;
+}
+
+/* Controls */
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 25px;
+  background: rgb(19, 20, 19);
+}
+
+#search-input {
+  width: 300px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #1d1a1a;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#search-btn {
+  background: rgb(154, 43, 43);
+}
+
+#random-btn {
+  background: rgb(38, 41, 109);
+}
+
+#reset-btn {
+  background: rgb(54, 54, 55);
+}
+
+
+/* Pokédex */
+
+.pokedex {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+
+/* Pokémon Card */
+
+.card {
+  background: rgb(253, 215, 28);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Pokémon image */
+
+.card-image {
+  background: #2c2f30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 320px;
+}
+
+.card-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+
+/* Card information */
+
+.card-info {
+  padding: 15px;
+}
+
+.pokemon-id {
+  color: #797979;
+  font-size: 25px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  text-align: center;
+}
