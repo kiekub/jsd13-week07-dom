@@ -5,7 +5,9 @@
 //   - the form (#todo-form)
 //   - the input (#todo-input)
 //   - the list (#todo-list)
-
+const todoForm = document.querySelector("#todo-form");
+const todoInput = document.querySelector("#todo-input");
+const todoList = document.querySelector("#todo-list");
 
 // TODO 2: Listen for the form's "submit" event. Inside the handler:
 //   - call event.preventDefault() so the page doesn't reload
