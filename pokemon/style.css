@@ -49,6 +49,11 @@ header p {
   font-size: 16px;
 }
 
+.error {
+font-size: 24px;
+color: #ffffff;
+}
+
 button {
   padding: 12px 18px;
   border: none;
