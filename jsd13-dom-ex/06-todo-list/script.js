@@ -11,17 +11,35 @@ const todoList = document.querySelector("#todo-list");
 
 // TODO 2: Listen for the form's "submit" event. Inside the handler:
 //   - call event.preventDefault() so the page doesn't reload
+todoForm.addEventListener("submit", (event) => {
+  event.preventDefault();
 //   - read and trim the input's value
+  const text = todoInput.value.trim();
 //   - if it's empty, do nothing (return)
+ if (text === "") {
+    return;
+  }
 //   - otherwise, create a new to-do item (see TODO 3) and clear the input
+  addTodo(text);
 
+  todoInput.value = "";
+});
 
 // TODO 3: Write a function addTodo(text) that:
 //   - creates an <li>
+function addTodo(text) {
+  const li = document.createElement("li");
 //   - creates a <span class="todo-text"> inside it containing the text
+const span = document.createElement("span");
+  span.classList.add("todo-text");
+  span.textContent = text;
 //   - creates a <button class="delete-btn"> inside it with text "x"
+const button = document.createElement("button");
+  button.classList.add("delete-btn");
+  button.textContent = "x";
+};
 //   - appends the <li> to the list
-//
+
 // Hint: use document.createElement, textContent, and append/appendChild.
 
 
